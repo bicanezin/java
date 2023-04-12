@@ -1,20 +1,12 @@
-
-//static só para membros da classe (atributos e metodos)
-
 public class Porta{
     /*static*/String macTipo;
     /*static*/String material;
     /*static*/int preco;
 
     public static void main(String[] args) {
-        Porta p = new Porta(); //metodo construtor -- aloca o objeto na memoria e passa ao SO as dimensoes de "p"
-                              // p "puxa" todas as variaveis globais declaradas e tbm os metodos da classe
-                              // declaração = instanciação
+        Porta p = new Porta(); 
 
-                              // OBJETO É UMA INSTANCIA DE UMA CLASSE -- carrega do HD, passa pelo processador e vai para mem RAM
-                              // OBJETO é um apontamento para um endereço de memória
-
-        p.macTipo = "Colonial"; // "para onde o P aporta, acesse o atributo macTipo, no qual, é Colonial"
+        p.macTipo = "Colonial"; 
         p.material = "Madeira";
         p.preco = 23;
 
@@ -25,13 +17,13 @@ public class Porta{
         System.out.println("Material..: "+p.material);
         System.out.println("Preco.....: "+p.preco);*/
 
-        // O GARBAGE COLLECTOR LIMPA DA MEMÓRIA OS OBJETOS QUE PERDERAM SUAS REFERENCIAS
+        // O GARBAGE COLLECTOR LIMPA DA MEMï¿½RIA OS OBJETOS QUE PERDERAM SUAS REFERENCIAS
     }
 
     public void impPorta(Porta k){
         Porta l = new Porta();
         l = k;
-        System.out.println("\nIMPRESSÃO IMPPORTA\n");
+        System.out.println("\nIMPRESSï¿½O IMPPORTA\n");
         System.out.println("Tipo mac..: "+l.macTipo);
         System.out.println("Material..: "+l.material);
         System.out.println("Preco.....: "+l.preco);

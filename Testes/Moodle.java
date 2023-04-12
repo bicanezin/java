@@ -12,7 +12,6 @@ public class Moodle {
 
     @Test
     public void aluno() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\cenor\\Google Drive\\..UTFPR._\\5 PERÍODO\\Teste de Software\\TrabalhoTesteSoftware\\chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
