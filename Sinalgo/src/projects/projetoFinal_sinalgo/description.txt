@@ -1,0 +1,6 @@
+Oo objetivo desse trabalho eh implementar dois nos no Sinalgo para envio e recebimento de mensagens.
+
+O primeiro no eh descrito como no Sink faz rota e recebe pacotes de todos os nos sensores da rede.
+
+O segundo no eh descrito como no Sensor e recebe o unico pacote de rota do no Sink e, apos, eh capaz de
+enviar pacotes para o no Sink.
