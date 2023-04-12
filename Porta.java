@@ -4,9 +4,20 @@ public class Porta{
     /*static*/int preco;
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         Porta p = new Porta(); 
 
         p.macTipo = "Colonial"; 
+=======
+        Porta p = new Porta(); //metodo construtor -- aloca o objeto na memoria e passa ao SO as dimensoes de "p"
+                              // p "puxa" todas as variaveis globais declaradas e tbm os metodos da classe
+                              // declara��o = instancia��o
+
+                              // OBJETO � UMA INSTANCIA DE UMA CLASSE -- carrega do HD, passa pelo processador e vai para mem RAM
+                              // OBJETO � um apontamento para um endere�o de mem�ria
+
+        p.macTipo = "Colonial"; // "para onde o P aporta, acesse o atributo macTipo, no qual, � Colonial"
+>>>>>>> 5aadf5d511c5e7eb74335f657e119e4181427ac5
         p.material = "Madeira";
         p.preco = 23;
 

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿CREATE DATABASE bancoTrabalhoDesktop;
+=======
+CREATE DATABASE bancoTrabalhoDesktop;
+>>>>>>> 5aadf5d511c5e7eb74335f657e119e4181427ac5
 USE bancoTrabalhoDesktop;
 
 CREATE TABLE usuario (
