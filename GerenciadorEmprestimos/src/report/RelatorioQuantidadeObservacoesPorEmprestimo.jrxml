@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8d8ce3dd-2399-40d0-bdfb-4ee1044a5bea">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT emprestimo.emprestimo_item AS item, COUNT(observacao.emprestimo_id) AS quantidade
+FROM emprestimo
+LEFT JOIN observacao ON emprestimo.emprestimo_id = observacao.emprestimo_id
+GROUP BY emprestimo.emprestimo_id
+ORDER BY emprestimo.emprestimo_id;]]>
+	</queryString>
+	<field name="item" class="java.lang.String"/>
+	<field name="quantidade" class="java.lang.Long"/>
+	<group name="item">
+		<groupExpression><![CDATA[$F{item}]]></groupExpression>
+	</group>
+	<group name="groupItem">
+		<groupExpression><![CDATA[$F{item}]]></groupExpression>
+		<groupHeader>
+			<band height="33">
+				<textField>
+					<reportElement x="58" y="8" width="139" height="20" uuid="d4b5cba4-1fe6-4f97-b602-d5211241521f"/>
+					<textElement textAlignment="Center"/>
+					<textFieldExpression><![CDATA[$F{item}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="343" y="8" width="149" height="20" uuid="f4dd44fb-0649-4c2d-ab73-f4c2d4907ee5"/>
+					<textElement textAlignment="Center"/>
+					<textFieldExpression><![CDATA[$F{quantidade}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="49" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="18" width="555" height="20" uuid="97d05d53-c637-4dea-a168-b44ee0029114"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RELATÓRIO DE QUANTIDADE DE OBSEVAÇÕES POR EMPRESTIMO]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="37" splitType="Stretch">
+			<staticText>
+				<reportElement x="229" y="0" width="114" height="20" uuid="9583ec11-e5be-43aa-8dee-4f734fd95d7b"/>
+				<textElement>
+					<font fontName="Times New Roman" size="16"/>
+				</textElement>
+				<text><![CDATA[Desktop 2019/1]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="29" width="555" height="1" uuid="a101db00-7c84-47d0-a80e-80d48d763e10"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="47" splitType="Stretch">
+			<staticText>
+				<reportElement x="58" y="12" width="116" height="20" uuid="915c3fc3-652a-40ea-b860-80d5333bd7e6"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Item]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="343" y="12" width="149" height="20" uuid="58434201-3718-4083-970f-6223dd4a0afe"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Quantidade de Observações]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="37" width="555" height="1" uuid="99e3d06a-ac82-4614-98f4-887cb9e18af5"/>
+			</line>
+		</band>
+	</columnHeader>
+	<pageFooter>
+		<band height="32" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="58" y="12" width="161" height="20" uuid="133e294d-4f14-4f88-826d-1cc951815bfc"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="372" y="12" width="80" height="20" uuid="d825cbca-4e51-4be7-997a-933984d7f45d"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Página "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="452" y="12" width="40" height="20" uuid="d543e937-1c01-41ed-ae9f-236f418d0a74"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
