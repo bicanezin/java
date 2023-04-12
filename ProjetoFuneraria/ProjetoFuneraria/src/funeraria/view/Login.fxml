@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="573.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="funeraria.controller.LoginController">
+   <children>
+      <Circle fill="DODGERBLUE" layoutX="345.0" layoutY="103.0" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="100.0" fitWidth="84.0" layoutX="303.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../controller/login.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="234.0" layoutY="189.0" text="ÁREA DE ACESSO " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="258.0" text="Usuário">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsuario" layoutX="86.0" layoutY="291.0" prefHeight="31.0" prefWidth="533.0" promptText="nome de usuário" />
+      <Label layoutX="86.0" layoutY="340.0" text="Senha">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtSenha" layoutX="86.0" layoutY="373.0" prefHeight="31.0" prefWidth="533.0" promptText="senha" />
+      <Button fx:id="btnEntrar" layoutX="268.0" layoutY="500.0" mnemonicParsing="false" onAction="#entrar" prefHeight="50.0" prefWidth="154.0" text="Entrar" />
+      <Label fx:id="lblUsuarioIncorreto" layoutX="248.0" layoutY="416.0" text="Usuário e/ou Senha inválido(s)" textFill="#eb0707" visible="false" />
+   </children>
+</AnchorPane>

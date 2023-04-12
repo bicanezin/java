@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="funeraria.controller.AnchorPaneClienteDialogController">
+   <children>
+      <GridPane layoutX="34.0" layoutY="20.0" prefHeight="655.0" prefWidth="715.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="383.0" minWidth="10.0" prefWidth="182.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="510.0" minWidth="0.0" prefWidth="510.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="labelClienteNome" text="Nome*" />
+            <Label fx:id="labelClienteCPF" text="CPF*" GridPane.rowIndex="2" />
+            <Label fx:id="labelClienteRG" text="RG*" GridPane.rowIndex="3" />
+            <Label fx:id="labelClienteDataNasc" text="Data de nascimento*" GridPane.rowIndex="4" />
+            <Label fx:id="labelClienteGenero" text="Gênero*" GridPane.rowIndex="5" />
+            <Label fx:id="labelClienteProfissao" text="Profissão*" GridPane.rowIndex="6" />
+            <Label fx:id="labelClienteEstadoCivil" text="Estado civil*" GridPane.rowIndex="7" />
+            <Label fx:id="labelClienteEmail" text="Email*" GridPane.rowIndex="8" />
+            <Label fx:id="labelClienteEndereco" text="Endereço*" GridPane.rowIndex="10" />
+            <Label fx:id="labelClienteTelefone" text="Telefone*" GridPane.rowIndex="9" />
+            <Label fx:id="labelClienteComplemento" text="Complemento" GridPane.rowIndex="12" />
+            <Label fx:id="labelClienteBairro" text="Bairro*" GridPane.rowIndex="13" />
+            <Label fx:id="labelClienteCEP" text="CEP*" GridPane.rowIndex="14" />
+            <Label fx:id="labelClienteEstado" text="Estado*" GridPane.rowIndex="15" />
+            <Label fx:id="labelClienteCidade" text="Cidade*" GridPane.rowIndex="16" />
+            <TextField fx:id="textFieldClienteCPF" promptText="xxxxxxxxxxx" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="textFieldClienteRG" promptText="xxxxxxxxxxx" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="textFieldClienteGenero" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="textFieldClienteProfissao" prefHeight="31.0" prefWidth="212.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="textFieldClienteEstadoCivil" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="textFieldClienteEmail" prefHeight="31.0" prefWidth="466.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="textFieldClienteTelefone" promptText="xxxxxxxxxxx" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <TextField fx:id="textFieldClienteEndereco" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <TextField fx:id="textFieldClienteComplemento" prefHeight="100.0" prefWidth="198.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <TextField fx:id="textFieldClienteBairro" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <TextField fx:id="textFieldClienteCEP" promptText="xxxxxxxx" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <TextField fx:id="textFieldClienteEstado" promptText="somente as siglas" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <TextField fx:id="textFieldClienteCidade" prefHeight="17.0" prefWidth="438.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="textFieldClienteDataNasc" promptText="dd/mm/aaaa" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="textFieldClienteSobrenome" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="labelClienteNumero" text="Número*" GridPane.rowIndex="11" />
+            <TextField fx:id="textFieldClienteNumero" promptText="00" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <TextField fx:id="textFieldClienteNome" prefHeight="15.0" prefWidth="438.0" GridPane.columnIndex="1" />
+            <Label fx:id="labelClienteSobrenome" text="Sobrenome*" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Group layoutX="438.0" layoutY="685.0" AnchorPane.bottomAnchor="33.0" AnchorPane.rightAnchor="107.1259765625" />
+      <Button fx:id="buttonCancelar" layoutX="544.0" layoutY="685.0" mnemonicParsing="false" onAction="#handleButtonCancelar" prefWidth="86.0" text="Cancelar" />
+      <Button fx:id="buttonConfirmar" layoutX="663.0" layoutY="685.0" mnemonicParsing="false" onAction="#handleButtonConfirmar" text="Confirmar" />
+      <Label layoutX="241.0" layoutY="675.0" text="*campos obrigatórios" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="funeraria.controller.HomeController">
+   <children>
+      <MenuBar prefHeight="39.0" prefWidth="750.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cliente">
+               <items>
+                  <MenuItem fx:id="menuItemCliente" mnemonicParsing="false" onAction="#manipulaMenuItemCliente" text="Gerenciar" />
+               </items></Menu>
+          <Menu fx:id="menuContrato" mnemonicParsing="false" text="Contrato">
+               <items>
+                  <MenuItem fx:id="menuItemContrato" mnemonicParsing="false" onAction="#manipulaMenuItemContrato" text="Gerenciar" />
+               </items></Menu>
+          <Menu fx:id="menuFalecido" mnemonicParsing="false" text="Falecido">
+               <items>
+                  <MenuItem fx:id="menuItemFalecido" mnemonicParsing="false" onAction="#manipulaMenuItemFalecido" text="Gerenciar" />
+               </items></Menu>
+            <Menu fx:id="menuPlano" mnemonicParsing="false" text="Plano">
+               <items>
+                  <MenuItem fx:id="menuItemPlano" mnemonicParsing="false" onAction="#manipulaMenuItemPlano" text="Gerenciar" />
+               </items></Menu>
+            <Menu fx:id="menuProduto" mnemonicParsing="false" text="Produto">
+               <items>
+                  <MenuItem fx:id="menuItemProduto" mnemonicParsing="false" onAction="#manipulaMenuItemProduto" text="Gerenciar" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="anchorPane" prefHeight="378.0" prefWidth="600.0" />
+   </children>
+</VBox>
